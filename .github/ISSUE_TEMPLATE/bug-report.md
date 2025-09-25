@@ -1,51 +1,51 @@
 ---
-name: "?? Bug Report"
+name: "ğŸ› Bug Report"
 about: "Reportar un error para ayudarnos a mejorar el proyecto"
 title: "[BUG] "
 labels: ["bug", "needs-triage"]
 assignees: ""
 ---
 
-# ?? Bug Report
+# ğŸ› Bug Report
 
-## ?? Resumen
-<!-- Describe el bug en una l¨ªnea clara y concisa -->
+## ğŸ“‹ Resumen
+<!-- Describe el bug en una lÃ­nea clara y concisa -->
 
 
-## ?? Descripci¨®n Detallada
+## ğŸ” DescripciÃ³n Detallada
 <!-- Explica el problema de manera detallada -->
 
 
-## ?? Pasos para Reproducir
-<!-- Proporciona pasos espec¨ªficos y numerados -->
+## ğŸ”„ Pasos para Reproducir
+<!-- Proporciona pasos especÃ­ficos y numerados -->
 1. 
 2. 
 3. 
 4. 
 
-## ? Comportamiento Esperado
-<!-- Describe qu¨¦ esperabas que ocurriera -->
+## âœ… Comportamiento Esperado
+<!-- Describe quÃ© esperabas que ocurriera -->
 
 
-## ? Comportamiento Actual
-<!-- Describe qu¨¦ est¨¢ ocurriendo en su lugar -->
+## âŒ Comportamiento Actual
+<!-- Describe quÃ© estÃ¡ ocurriendo en su lugar -->
 
 
-## ?? Entorno
+## ğŸ“± Entorno
 ### Sistema:
 - **SO:** [ej. Windows 11, macOS Monterey, Ubuntu 22.04]
 - **Navegador:** [ej. Chrome 118.0, Firefox 119.0, Safari 17.0]
-- **Versi¨®n del proyecto:** [ej. v2.1.0]
+- **VersiÃ³n del proyecto:** [ej. v2.1.0]
 - **Node.js:** [si aplica, ej. v18.17.0]
 
-### Dispositivo (si es m¨®vil):
+### Dispositivo (si es mÃ³vil):
 - **Dispositivo:** [ej. iPhone 14, Samsung Galaxy S23]
-- **SO m¨®vil:** [ej. iOS 17.0, Android 13]
-- **Navegador m¨®vil:** [ej. Safari m¨®vil, Chrome m¨®vil]
+- **SO mÃ³vil:** [ej. iOS 17.0, Android 13]
+- **Navegador mÃ³vil:** [ej. Safari mÃ³vil, Chrome mÃ³vil]
 
-## ??? Evidencia Visual
+## ğŸ–¼ï¸ Evidencia Visual
 ### Capturas de Pantalla
-<!-- Arrastra y suelta im¨¢genes aqu¨ª -->
+<!-- Arrastra y suelta imÃ¡genes aquÃ­ -->
 
 ### Videos/GIFs
 <!-- Si el bug es complejo de explicar, un video ayuda mucho -->
@@ -53,64 +53,64 @@ assignees: ""
 ### Logs de Consola
 <!-- Incluye cualquier error de consola -->
 ```
-Pega aqu¨ª los logs de error
+Pega aquÃ­ los logs de error
 ```
 
-## ?? Informaci¨®n T¨¦cnica Adicional
+## ğŸ”§ InformaciÃ³n TÃ©cnica Adicional
 ### URL donde ocurre:
 <!-- Si aplica -->
 
 ### Datos del usuario afectado:
 - **ID de usuario:** 
 - **Rol:** 
-- **Configuraci¨®n especial:** 
+- **ConfiguraciÃ³n especial:** 
 
 ### Red:
-- [ ] Conexi¨®n estable
-- [ ] Conexi¨®n lenta
-- [ ] Sin conexi¨®n (modo offline)
+- [ ] ConexiÃ³n estable
+- [ ] ConexiÃ³n lenta
+- [ ] Sin conexiÃ³n (modo offline)
 
-## ?? Severidad e Impacto
-<!-- Marca la opci¨®n que mejor describa el impacto -->
-- [ ] ?? **Cr¨ªtico** - La aplicaci¨®n no funciona o hay p¨¦rdida de datos
-- [ ] ?? **Alto** - Funcionalidad importante no disponible, pero hay workarounds
-- [ ] ?? **Medio** - Funcionalidad menor afectada, workarounds disponibles
-- [ ] ?? **Bajo** - Problema cosm¨¦tico o de usabilidad menor
+## ğŸ¯ Severidad e Impacto
+<!-- Marca la opciÃ³n que mejor describa el impacto -->
+- [ ] ğŸ”´ **CrÃ­tico** - La aplicaciÃ³n no funciona o hay pÃ©rdida de datos
+- [ ] ğŸŸ¡ **Alto** - Funcionalidad importante no disponible, pero hay workarounds
+- [ ] ğŸŸ¢ **Medio** - Funcionalidad menor afectada, workarounds disponibles
+- [ ] ğŸ”µ **Bajo** - Problema cosmÃ©tico o de usabilidad menor
 
-## ?? Frecuencia
+## ğŸ“Š Frecuencia
 - [ ] Siempre ocurre
 - [ ] Ocurre frecuentemente (>50% del tiempo)
 - [ ] Ocurre ocasionalmente (<50% del tiempo)
-- [ ] Ocurri¨® una sola vez
+- [ ] OcurriÃ³ una sola vez
 
-## ?? ?Has intentado solucionarlo?
+## ğŸ” Â¿Has intentado solucionarlo?
 <!-- Marca lo que has intentado -->
-- [ ] Reiniciar la aplicaci¨®n
-- [ ] Limpiar cach¨¦ del navegador
-- [ ] Probar en modo inc¨®gnito
+- [ ] Reiniciar la aplicaciÃ³n
+- [ ] Limpiar cachÃ© del navegador
+- [ ] Probar en modo incÃ³gnito
 - [ ] Probar en otro navegador
-- [ ] Reinstalar la aplicaci¨®n
+- [ ] Reinstalar la aplicaciÃ³n
 - [ ] Otro: ____________________
 
-## ?? Informaci¨®n de Contexto Adicional
-### ?Funciona en otras partes de la aplicaci¨®n?
-<!-- ?Es espec¨ªfico de una secci¨®n o afecta toda la app? -->
+## ğŸ§© InformaciÃ³n de Contexto Adicional
+### Â¿Funciona en otras partes de la aplicaciÃ³n?
+<!-- Â¿Es especÃ­fico de una secciÃ³n o afecta toda la app? -->
 
-### ?Comenz¨® recientemente?
-<!-- ?Funcionaba antes? ?Cu¨¢ndo notaste el problema por primera vez? -->
+### Â¿ComenzÃ³ recientemente?
+<!-- Â¿Funcionaba antes? Â¿CuÃ¡ndo notaste el problema por primera vez? -->
 
 ### Configuraciones especiales:
-<!-- ?Tienes alguna configuraci¨®n personalizada que podr¨ªa afectar? -->
+<!-- Â¿Tienes alguna configuraciÃ³n personalizada que podrÃ­a afectar? -->
 
-## ??? Labels Sugeridas
-<!-- El equipo asignar¨¢ las labels apropiadas -->
+## ğŸ·ï¸ Labels Sugeridas
+<!-- El equipo asignarÃ¡ las labels apropiadas -->
 - [ ] `ui` - Problema de interfaz de usuario
 - [ ] `backend` - Problema del lado del servidor
 - [ ] `performance` - Problema de rendimiento
-- [ ] `mobile` - Espec¨ªfico de dispositivos m¨®viles
+- [ ] `mobile` - EspecÃ­fico de dispositivos mÃ³viles
 - [ ] `accessibility` - Problema de accesibilidad
 - [ ] `security` - Relacionado con seguridad
-- [ ] `data-loss` - Posible p¨¦rdida de datos
+- [ ] `data-loss` - Posible pÃ©rdida de datos
 
-## ? ?Tienes alguna sugerencia de soluci¨®n?
-<!-- Si tienes ideas de c¨®mo podr¨ªa solucionarse -->
+## âœ¨ Â¿Tienes alguna sugerencia de soluciÃ³n?
+<!-- Si tienes ideas de cÃ³mo podrÃ­a solucionarse -->
