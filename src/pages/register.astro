@@ -1,0 +1,11 @@
+---
+import "@styles/global.css";
+import RegisterForm from '@components/auth/RegisterForm.jsx';
+import Layout from '@layouts/Layout.astro';
+import SectionContainer from '@components/SectionContainer.astro';
+---
+<Layout title="Registro de Usuario">
+    <SectionContainer id="register">
+        <RegisterForm client:load>
+    </SectionContainer>
+</Layout>

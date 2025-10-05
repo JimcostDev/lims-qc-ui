@@ -1,0 +1,12 @@
+---
+import "@styles/global.css";
+import LoginForm from "@components/auth/LoginForm.jsx";
+import Layout from "@layouts/Layout.astro";
+import SectionContainer from "@components/SectionContainer.astro";
+---
+
+<Layout title="Iniciar Sesión">
+  <SectionContainer id="login">
+    <LoginForm client:load />
+  </SectionContainer>
+</Layout>

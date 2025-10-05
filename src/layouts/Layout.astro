@@ -13,22 +13,24 @@ import Footer from '@components/Footer.astro';
 import { ClientRouter } from 'astro:transitions';
 
 const {
-  title = 'Página',
-  description = 'Descripción predeterminada del sitio web.',
-  canonical = 'https://www.ejemplo.com',
-  ogImage = '/dev.webp',
+  title = 'Sistema de Gestión de Laboratorio',
+  description = 'LIMS-QC - Sistema de Gestión de Información de Laboratorio y Control de Calidad certificado bajo ISO 15189:2022. Control documental, trazabilidad de muestras y auditoría.',
+  canonical = 'https://www.lims-qc.com',
+  ogImage = '/lims-qc-og.webp',
 } = Astro.props;
 
-const pageTitle = `${title} | JimcostDev - Software Engineer`;
+const pageTitle = `${title} | LIMS-QC`;
 ---
 <!doctype html>
-<html lang="es" class="scroll-smooth" itemscope itemtype="https://schema.org/Person">
+<html lang="es" class="scroll-smooth" itemscope itemtype="https://schema.org/WebApplication">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="7 days" />
     <meta name="language" content="Spanish" />
+    <meta name="author" content="LIMS-QC Development Team" />
+    <meta name="keywords" content="LIMS, laboratorio, ISO 15189, control de calidad, trazabilidad, muestras, gestión documental" />
 
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
@@ -42,29 +44,35 @@ const pageTitle = `${title} | JimcostDev - Software Engineer`;
     <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="es_ES" />
-    <meta property="og:site_name" content="JimcostDev" />
+    <meta property="og:site_name" content="LIMS-QC" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-    <meta name="twitter:site" content="@jimcostdev" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ronaldo Jiménez",
-        "jobTitle": "Software Engineer",
-        "url": "https://www.jimcostdev.com",
-        "sameAs": [
-          "https://github.com/jimcostdev",
-          "https://linkedin.com/in/ronaldo-jimenez"
-        ],
-        "image": "{ogImage}",
-        "description": "{description}"
+        "@type": "WebApplication",
+        "name": "LIMS-QC",
+        "applicationCategory": "Laboratory Information Management System",
+        "url": "{canonical}",
+        "description": "{description}",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "category": "Laboratory Management Software"
+        },
+        "featureList": [
+          "Control Documental",
+          "Trazabilidad de Muestras",
+          "Cumplimiento ISO 15189:2022",
+          "Auditoría y Reportes",
+          "Gestión de Calidad"
+        ]
       }
     </script>
 
@@ -74,13 +82,13 @@ const pageTitle = `${title} | JimcostDev - Software Engineer`;
     <ClientRouter />
   </head>
 
-  <body class="absolute inset-0 -z-10 h-full w-full bg-sky-50 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed top-4 left-4 bg-sky-600 text-white px-4 py-2 rounded-lg">
+  <body class="min-h-screen bg-gray-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed top-4 left-4 z-50 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg">
       Saltar al contenido principal
     </a>
 
     <Header />
-    <main id="main-content" class="max-w-5xl px-4 m-auto">
+    <main id="main-content">
       <slot />
     </main>
     <Footer/>
