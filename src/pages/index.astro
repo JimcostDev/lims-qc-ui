@@ -3,15 +3,14 @@ import Layout from '@layouts/Layout.astro';
 ---
 
 <Layout title='LIMS-QC - Sistema de Gestión de Laboratorio'>
-	<div class="min-h-screen flex items-center justify-center px-4 py-12">
-		<div class="max-w-4xl w-full">
+	<div class="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12 px-4">
+		<div class="max-w-6xl mx-auto">
 			<!-- Hero Section -->
-			<div class="text-center mb-12">
-				<!-- Logo/Icon -->
+			<div class="text-center mb-16">
 				<div class="flex justify-center mb-6">
-					<div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+					<div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl">
 						<svg 
-							class="w-10 h-10 text-white" 
+							class="w-12 h-12 text-white" 
 							fill="none" 
 							stroke="currentColor" 
 							viewBox="0 0 24 24"
@@ -26,142 +25,114 @@ import Layout from '@layouts/Layout.astro';
 					</div>
 				</div>
 
-				<!-- Title -->
-				<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-					Bienvenido a LIMS-QC
+				<h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+					LIMS-QC
 				</h1>
-				<p class="text-lg md:text-xl text-gray-600 mb-2">
+				<p class="text-xl md:text-2xl text-gray-600 mb-3">
 					Laboratory Information Management & Quality Control System
 				</p>
-				<p class="text-sm text-gray-500">
-					Sistema de gestión de información de laboratorio certificado bajo ISO 15189:2022
+				<p class="text-base text-gray-500 max-w-3xl mx-auto">
+					Plantilla inicial para el desarrollo de un SGC/LIMS alineado con <strong>ISO 15189:2022</strong>. 
+					Diseñado para arrancar rápido (MVP) y escalar: control documental, trazabilidad de muestras y auditoría.
 				</p>
 			</div>
 
-			<!-- Cards Container -->
-			<div class="grid md:grid-cols-2 gap-6 mb-8">
-				<!-- Login Card -->
-				<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8 hover:shadow-md transition">
-					<div class="flex items-center gap-3 mb-4">
-						<div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-							<svg 
-								class="w-6 h-6 text-blue-600" 
-								fill="none" 
-								stroke="currentColor" 
-								viewBox="0 0 24 24"
-							>
-								<path 
-									stroke-linecap="round" 
-									stroke-linejoin="round" 
-									stroke-width="2" 
-									d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" 
-								/>
-							</svg>
-						</div>
-						<h2 class="text-xl font-semibold text-gray-900">
-							Iniciar Sesión
-						</h2>
-					</div>
-					<p class="text-gray-600 mb-6">
-						Accede a tu cuenta para gestionar muestras, documentos y control de calidad del laboratorio.
-					</p>
-					<a 
-						href="/login" 
-						class="block w-full text-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition font-medium"
-					>
-						Ingresar al sistema
-					</a>
-				</div>
-
-				<!-- Register Card -->
-				<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8 hover:shadow-md transition">
-					<div class="flex items-center gap-3 mb-4">
+			<!-- Features MVP Section -->
+			<div class="mb-12">
+				<div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+					<div class="flex items-center gap-3 mb-6">
 						<div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-							<svg 
-								class="w-6 h-6 text-green-600" 
-								fill="none" 
-								stroke="currentColor" 
-								viewBox="0 0 24 24"
-							>
-								<path 
-									stroke-linecap="round" 
-									stroke-linejoin="round" 
-									stroke-width="2" 
-									d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" 
-								/>
+							<svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 							</svg>
 						</div>
-						<h2 class="text-xl font-semibold text-gray-900">
-							Crear Cuenta
+						<h2 class="text-2xl font-bold text-gray-900">
+							Características (MVP)
 						</h2>
 					</div>
-					<p class="text-gray-600 mb-6">
-						Regístrate para obtener acceso al sistema y comenzar a trabajar con trazabilidad completa.
-					</p>
-					<a 
-						href="/register" 
-						class="block w-full text-center px-6 py-3 border-2 border-green-600 text-green-600 rounded-md hover:bg-green-50 transition font-medium"
-					>
-						Registrar nueva cuenta
-					</a>
+
+					<div class="grid md:grid-cols-2 gap-4">
+						<div class="flex gap-3 p-4 bg-gray-50 rounded-lg">
+							<svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+							</svg>
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-1">Gestión Documental</h3>
+								<p class="text-sm text-gray-600">Versionado completo con subida, historial y descargas</p>
+							</div>
+						</div>
+
+						<div class="flex gap-3 p-4 bg-gray-50 rounded-lg">
+							<svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+							</svg>
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-1">Trazabilidad de Muestras</h3>
+								<p class="text-sm text-gray-600">Generación de sample_code con códigos QR</p>
+							</div>
+						</div>
+
+						<div class="flex gap-3 p-4 bg-gray-50 rounded-lg">
+							<svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+							</svg>
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-1">Gestión de Usuarios y Roles</h3>
+								<p class="text-sm text-gray-600">Control de acceso basado en roles (RBAC)</p>
+							</div>
+						</div>
+
+						<div class="flex gap-3 p-4 bg-gray-50 rounded-lg">
+							<svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+							</svg>
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-1">Audit Logs</h3>
+								<p class="text-sm text-gray-600">Registros append-only con motor flexible (MongoDB recomendado)</p>
+							</div>
+						</div>
+
+						<div class="flex gap-3 p-4 bg-gray-50 rounded-lg md:col-span-2">
+							<svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+							</svg>
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-1">Reportes Básicos</h3>
+								<p class="text-sm text-gray-600">Generación de reportes en PDF y exportación a Excel</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<!-- Features Section -->
-			<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-				<h3 class="text-sm font-semibold text-gray-700 mb-4 uppercase tracking-wide">
-					Características principales
-				</h3>
-				<div class="grid md:grid-cols-3 gap-6">
-					<!-- Feature 1 -->
-					<div class="flex gap-3">
-						<div class="flex-shrink-0">
-							<div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-								</svg>
-							</div>
-						</div>
-						<div>
-							<h4 class="text-sm font-medium text-gray-900 mb-1">Control Documental</h4>
-							<p class="text-xs text-gray-600">Gestión completa de documentos y procedimientos</p>
-						</div>
+			<!-- Stack Section -->
+			<div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 mb-12">
+				<div class="flex items-center gap-3 mb-6">
+					<div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+						<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+						</svg>
 					</div>
+					<h2 class="text-2xl font-bold text-gray-900">
+						Tecnologías Utilizadas
+					</h2>
+				</div>
 
-					<!-- Feature 2 -->
-					<div class="flex gap-3">
-						<div class="flex-shrink-0">
-							<div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-								</svg>
-							</div>
-						</div>
-						<div>
-							<h4 class="text-sm font-medium text-gray-900 mb-1">Trazabilidad de Muestras</h4>
-							<p class="text-xs text-gray-600">Seguimiento completo del ciclo de vida</p>
-						</div>
-					</div>
-
-					<!-- Feature 3 -->
-					<div class="flex gap-3">
-						<div class="flex-shrink-0">
-							<div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-								</svg>
-							</div>
-						</div>
-						<div>
-							<h4 class="text-sm font-medium text-gray-900 mb-1">Auditoría y Cumplimiento</h4>
-							<p class="text-xs text-gray-600">Alineado con ISO 15189:2022</p>
-						</div>
-					</div>
+				<div class="flex flex-wrap gap-3">
+					<span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">FastAPI</span>
+					<span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">MongoDB</span>
+					<span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Astro</span>
+					<span class="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium">React</span>
+					<span class="px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+					<span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Docker</span>
 				</div>
 			</div>
 
 			<!-- Footer -->
-			<div class="text-center mt-8">
+			<div class="text-center mt-12">
+				<p class="text-sm text-gray-600 mb-2">
+					Sistema alineado con <strong>ISO 15189:2022</strong>
+				</p>
 				<p class="text-xs text-gray-500">
 					© 2025 LIMS-QC System. Todos los derechos reservados.
 				</p>
