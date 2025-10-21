@@ -4,5 +4,8 @@ export interface User {
   full_name: string;
   username: string;
   email: string;
-  roles: string[];
+  role: string;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
 }

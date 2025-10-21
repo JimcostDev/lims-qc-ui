@@ -1,0 +1,12 @@
+---
+import "@styles/global.css";
+import UserDashboard from "@components/UserDashboard.jsx";
+import Layout from "@layouts/Layout.astro";
+import SectionContainer from "@components/SectionContainer.astro";
+---
+
+<Layout title="Iniciar Sesión">
+  <SectionContainer id="login">
+    <UserDashboard client:load />
+  </SectionContainer>
+</Layout>
