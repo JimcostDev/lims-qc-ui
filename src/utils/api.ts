@@ -1,5 +1,5 @@
 // Configuración de la API
-const API_BASE_URL = import.meta.env.PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+const API_BASE_URL = import.meta.env.PUBLIC_API_URL || 'https://surviving-tera-lims-qc-93d5d923.koyeb.app/api/v1';
 
 interface RegisterData {
   email: string;
